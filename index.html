@@ -3,34 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MJPG Analytics & Economics</title>
-  <meta name="description" content="MJPG Analytics & Economics - Data, Economics and Applied Analysis." />
+  <title>María José Pozos Garay | MJPG Analytics & Economics</title>
+  <meta
+    name="description"
+    content="Senior Data Scientist & AI Consultant | Analytics, Economics & Applied AI"
+  />
   <style>
     :root {
-      --bg-dark: #0b1f2d;
-      --bg-mid: #132c3d;
-      --bg-soft: #f3f6f8;
-      --card: #ffffff;
-      --ink: #152430;
-      --text-light: #eaf1f7;
-      --text-soft: #a6b4c2;
-      --line: #d5dee7;
-      --primary: #1f6fb5;
-      --primary-soft: #d9eaf8;
-      --success: #1b8f72;
-      --shadow: 0 12px 28px rgba(11, 31, 45, 0.08);
+      --bg: #edf2f6;
+      --bg-2: #f7f9fb;
+      --panel: #ffffff;
+      --ink: #17232f;
+      --ink-soft: #465767;
+      --line: #dfe7ee;
+      --navy: #0b1f2d;
+      --navy-2: #102f45;
+      --blue: #1f6fb5;
+      --blue-soft: #dfeefb;
+      --green: #1d8d68;
+      --text-light: #edf4fb;
+      --shadow: 0 16px 35px rgba(11, 31, 45, 0.10);
+      --radius: 18px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: "Inter", "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #edf3f7 0%, #f5f7fa 100%);
+      background: linear-gradient(180deg, #edf2f6 0%, #f7f9fb 100%);
       color: var(--ink);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
     }
-    a { text-decoration: none; color: inherit; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
     .container {
       width: min(1180px, calc(100% - 32px));
@@ -38,90 +58,109 @@
     }
 
     .hero {
-      background: linear-gradient(90deg, rgba(11,31,45,0.90), rgba(19,44,61,0.95));
-      box-shadow: inset 0 -1px 0 rgba(255,255,255,0.08);
-      padding: 26px 0;
+      position: relative;
+      background:
+        linear-gradient(90deg, rgba(11, 31, 45, 0.28), rgba(11, 31, 45, 0.35)),
+        url("assets/banner.jpg") center/cover no-repeat;
+      min-height: 220px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
     }
 
     .hero-inner {
       width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
+      min-height: 220px;
       display: grid;
       grid-template-columns: 220px 1fr;
       align-items: center;
-      min-height: 190px;
-      gap: 24px;
+      gap: 0;
     }
 
-    .brand-mark {
-      width: 210px;
-      height: 210px;
-      background: var(--bg-dark);
-      border: 4px solid rgba(255,255,255,0.9);
+    .brand-block {
+      width: 220px;
+      height: 220px;
+      background: rgba(11,31,45,0.85);
+      border: 5px solid rgba(255,255,255,0.9);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+      box-shadow: 0 18px 30px rgba(0,0,0,0.12);
       overflow: hidden;
-      margin-left: 8px;
+      margin-left: 10px;
+      backdrop-filter: blur(2px);
     }
 
-    .brand-logo {
+    .brand-block img {
       width: 100%;
       height: 100%;
-      display: block;
       object-fit: cover;
-      background: var(--bg-dark);
+      display: block;
+      background: rgba(11,31,45,0.9);
     }
 
     .brand-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
       color: var(--text-light);
-      font-size: clamp(2.2rem, 3vw, 3.5rem);
+      font-size: clamp(2.2rem, 2.8vw, 3.2rem);
       font-weight: 300;
+      line-height: 1.1;
       letter-spacing: 0.04em;
-      line-height: 1.08;
       text-align: center;
-      padding-right: 80px;
+      padding-right: 70px;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
     }
 
-    .main-panel {
+    .main-shell {
       max-width: 1180px;
       margin: 0 auto 40px;
-      background: rgba(255,255,255,0.97);
+      background: rgba(255,255,255,0.98);
       border: 1px solid var(--line);
       border-radius: 0 0 18px 18px;
       box-shadow: var(--shadow);
       overflow: hidden;
     }
 
-    .profile-wrap {
-      padding: 32px 26px 0;
+    .section {
+      padding: 34px 26px 50px;
     }
 
     h1 {
       margin: 0 0 12px;
       font-size: clamp(2.5rem, 4vw, 4rem);
-      letter-spacing: -0.05em;
       line-height: 1.08;
-      color: var(--ink);
+      letter-spacing: -0.05em;
       font-weight: 700;
+      color: var(--ink);
     }
 
-    .subtitle {
-      margin-top: 10px;
-      font-size: clamp(1.1rem, 2vw, 2rem);
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.6rem, 2vw, 2.2rem);
+      letter-spacing: -0.04em;
+      color: var(--ink);
+    }
+
+    .lead {
+      margin: 0;
+      font-size: clamp(1.12rem, 1.8vw, 2rem);
+      line-height: 1.45;
       color: var(--ink);
       font-weight: 400;
     }
 
-    .meta {
+    .hero-note {
       margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
+      background: rgba(31, 111, 181, 0.08);
+      border: 1px solid rgba(31, 111, 181, 0.22);
+      border-radius: 14px;
+      padding: 14px 16px;
       color: var(--ink);
-      font-size: 1.05rem;
-      opacity: 0.8;
+      font-size: 0.98rem;
+      font-weight: 500;
     }
 
     .actions {
@@ -140,10 +179,11 @@
       height: 54px;
       padding: 0 26px;
       border-radius: 999px;
-      font-size: 1.02rem;
+      font-size: 1rem;
       font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
       border: 2px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -151,25 +191,25 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--primary), #165a9a);
+      background: linear-gradient(135deg, var(--blue), #165a9a);
       color: #fff;
-      box-shadow: 0 16px 24px rgba(31, 115, 183, 0.22);
+      box-shadow: 0 16px 24px rgba(31,115,183,0.22);
     }
 
     .btn-secondary {
       background: #fff;
-      border-color: rgba(24, 33, 45, 0.18);
+      border-color: rgba(24,33,45,0.15);
       color: var(--ink);
-      box-shadow: 0 8px 16px rgba(24,33,45,0.04);
+      box-shadow: 0 8px 16px rgba(24,33,45,0.03);
     }
 
     .tabs {
       display: flex;
-      gap: 34px;
+      gap: 32px;
       padding: 16px 26px 0;
+      background: linear-gradient(180deg, #fbfcfd 0%, #f5f7fa 100%);
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
-      background: linear-gradient(180deg, #fbfcfd 0%, #f5f7fa 100%);
       overflow-x: auto;
       white-space: nowrap;
     }
@@ -180,12 +220,13 @@
       align-items: center;
       padding: 18px 0 18px;
       color: var(--ink);
-      font-size: 1.04rem;
+      font-size: 1.02rem;
       font-weight: 600;
+      transition: color 0.2s ease;
     }
 
     .tab.active {
-      color: var(--success);
+      color: var(--green);
       font-weight: 700;
     }
 
@@ -196,21 +237,14 @@
       right: 0;
       bottom: 0;
       height: 4px;
-      background: var(--success);
+      background: var(--green);
       border-radius: 999px;
-    }
-
-    .content {
-      padding: 34px 26px 50px;
-      color: var(--ink);
-      opacity: 0.88;
-      font-size: 1.06rem;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
+      gap: 22px;
       margin-top: 18px;
     }
 
@@ -219,25 +253,25 @@
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 22px;
-      box-shadow: 0 12px 22px rgba(15, 23, 42, 0.04);
+      box-shadow: 0 12px 22px rgba(15,23,42,0.04);
     }
 
     .card h3 {
       margin: 0 0 10px;
-      font-size: 1.2rem;
       color: var(--ink);
+      font-size: 1.2rem;
     }
 
     .card p {
       margin: 0;
       color: var(--ink);
-      opacity: 0.8;
+      opacity: 0.82;
     }
 
     .pill {
       display: inline-block;
-      background: var(--primary-soft);
-      color: var(--bg-dark);
+      background: var(--blue-soft);
+      color: var(--navy);
       padding: 7px 12px;
       border-radius: 999px;
       font-size: 0.78rem;
@@ -247,19 +281,41 @@
       margin-bottom: 12px;
     }
 
+    .content-block {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--ink);
+      opacity: 0.9;
+    }
+
+    .list li {
+      margin-bottom: 8px;
+    }
+
     @media (max-width: 860px) {
       .hero-inner {
         grid-template-columns: 1fr;
         padding-top: 18px;
         padding-bottom: 10px;
       }
-      .brand-mark {
+      .brand-block {
         margin: 0 auto;
       }
       .brand-title {
         padding-right: 0;
       }
-      .grid {
+      .grid, .two-col {
         grid-template-columns: 1fr;
       }
       .actions {
@@ -273,59 +329,212 @@
   </style>
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="home">
     <div class="hero-inner">
-      <div class="brand-mark" aria-label="MJPG logo">
-        <img class="brand-logo" src="assets/mjpg-logo.svg" alt="MJPG logo" />
+      <div class="brand-block" aria-label="MJPG brand mark">
+        <img src="assets/mjpg-logo.svg" alt="MJPG logo" />
       </div>
-      <div class="brand-title">Analytics &amp;<br>Economics</div>
+
+      <div class="brand-title">
+        Analytics &amp;<br>Economics
+      </div>
     </div>
   </header>
 
-  <main class="main-panel">
-    <section class="profile-wrap">
-      <h1>MJPG Analytics &amp; Economics</h1>
-      <div class="subtitle">Data, economics, and strategic decision support for business and research</div>
+  <main class="main-shell">
+    <section class="section" id="home-section">
+      <div class="profile-wrap">
+        <h1>María José Pozos Garay</h1>
 
-      <div class="meta">
-        <span>Business Consulting &amp; Services</span>
-        <span>•</span>
-        <span>Mexico City</span>
-      </div>
+        <p class="lead">
+          Senior Data Scientist &amp; AI Consultant | Analytics, Economics &amp; Applied AI
+        </p>
 
-      <div class="actions">
-        <a class="btn btn-primary" href="https://electric-salto-517.notion.site/Mar-a-Jos-Pozos-Garay-4022385efaba8070b7d1c54e3b579dc9?source=copy_link" target="_blank" rel="noreferrer">Portfolio</a>
-        <a class="btn btn-secondary" href="https://github.com/Majo14Pozos" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn btn-secondary" href="https://www.linkedin.com/company/mjpg-analytics-economics" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="hero-note">
+          📍 Paris Transition: Relocating to Paris in December 2026. Available for remote global projects and in-person consulting / B2B arrangements in France.
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:pozosmarijose@gmail.com" target="_blank" rel="noreferrer">Email Me</a>
+          <a class="btn btn-primary" href="https://electric-salto-517.notion.site/Mar-a-Jos-Pozos-Garay-4022385efaba8070b7d1c54e3b579dc9" target="_blank" rel="noreferrer">Portfolio Notion</a>
+          <a class="btn btn-secondary" href="https://github.com/Majo14Pozos" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/company/mjpg-analytics-economics" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
 
     <nav class="tabs" aria-label="Main navigation">
-      <a href="#" class="tab active">Home</a>
-      <a href="#" class="tab">About</a>
-      <a href="#" class="tab">Services</a>
-      <a href="#" class="tab">Projects</a>
-      <a href="#" class="tab">Methodology</a>
-      <a href="#" class="tab">Contact</a>
+      <a href="#home" class="tab active">Home</a>
+      <a href="#about" class="tab">About</a>
+      <a href="#services" class="tab">Services</a>
+      <a href="#projects" class="tab">Projects</a>
+      <a href="#methodology" class="tab">Methodology</a>
+      <a href="#contact" class="tab">Contact</a>
     </nav>
 
-    <section class="content">
-      <div class="pill">Methodology</div>
-      <div class="grid">
-        <div class="card">
-          <h3>Economics</h3>
-          <p>Macroeconomic analysis, decision support, and structured interpretation of risk, policy, and market dynamics.</p>
+    <section class="section" id="about">
+      <div class="content-block">
+        <div class="pill">About</div>
+        <h2>Data-driven strategy, economic insight, and applied AI</h2>
+        <p>
+          I work at the intersection of analytics, economics, and applied intelligence to transform complex information into clear decisions.
+          My work supports organizations navigating uncertainty, optimization, and strategic planning across operational and executive contexts.
+        </p>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>Focus</h3>
+            <p>Economic analysis, statistical modeling, forecasting, AI workflows, business intelligence, and strategic interpretation.</p>
+          </div>
+
+          <div class="card">
+            <h3>Approach</h3>
+            <p>Structured, reproducible, and decision-oriented consulting designed for business and research environments.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Analytics</h3>
-          <p>Data cleaning, statistical exploration, modeling, and structured communication for executive decision-making.</p>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="content-block">
+        <div class="pill">Services</div>
+        <h2>Consulting and analytical support for strategic execution</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Data Analytics</h3>
+            <p>Structured analysis, reporting, and business intelligence for operational and executive decision-making.</p>
+          </div>
+
+          <div class="card">
+            <h3>Economic Analysis</h3>
+            <p>Macro, market, and policy interpretation to support strategy, planning, and competitive intelligence.</p>
+          </div>
+
+          <div class="card">
+            <h3>Applied AI</h3>
+            <p>Machine learning workflows, intelligent automation, and strategic implementation for real business challenges.</p>
+          </div>
+
+          <div class="card">
+            <h3>Forecasting</h3>
+            <p>Time series analysis and predictive modeling for demand, risk, and operational planning.</p>
+          </div>
+
+          <div class="card">
+            <h3>Dashboards</h3>
+            <p>Executive dashboards and KPI systems designed to communicate insights clearly and actionably.</p>
+          </div>
+
+          <div class="card">
+            <h3>Research &amp; Methodology</h3>
+            <p>Analytical frameworks, research design, and reproducible methodologies for decision support and business intelligence.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Portfolio</h3>
-          <p>Public-facing methodology, technical summaries, and business narratives designed to complement project repositories and client work.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="content-block">
+        <div class="pill">Projects</div>
+        <h2>Selected work and public-facing analytical outputs</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>FMX</h3>
+            <p>Applied analytical project centered on structured workflows, data exploration, and decision-oriented outputs.</p>
+          </div>
+
+          <div class="card">
+            <h3>Monetary Policy Risk Dashboard</h3>
+            <p>Macro and policy risk analysis with structured visualization and analytical interpretation.</p>
+          </div>
+
+          <div class="card">
+            <h3>Portfolio &amp; Methodology</h3>
+            <p>Public documentation, summaries, and analytical narrative designed to complement technical repositories and client work.</p>
+          </div>
+        </div>
+
+        <div class="actions" style="margin-top: 26px;">
+          <a class="btn btn-primary" href="https://github.com/Majo14Pozos" target="_blank" rel="noreferrer">View GitHub</a>
+          <a class="btn btn-secondary" href="https://electric-salto-517.notion.site/Mar-a-Jos-Pozos-Garay-4022385efaba8070b7d1c54e3b579dc9" target="_blank" rel="noreferrer">Read Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methodology">
+      <div class="content-block">
+        <div class="pill">Methodology</div>
+        <h2>How analysis is structured and communicated</h2>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>1. Discovery</h3>
+            <p>Clarify business questions, decision contexts, and expected outcomes before moving into quantitative analysis.</p>
+          </div>
+
+          <div class="card">
+            <h3>2. Data Preparation</h3>
+            <p>Clean, validate, and structure the data to support reliable analytical work and cross-functional communication.</p>
+          </div>
+
+          <div class="card">
+            <h3>3. Modeling</h3>
+            <p>Apply statistical, econometric, or AI methods aligned with the business problem and decision requirement.</p>
+          </div>
+
+          <div class="card">
+            <h3>4. Communication</h3>
+            <p>Translate outputs into narrative, dashboards, and executive recommendations that can be used in real decision-making.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="content-block">
+        <div class="pill">Contact</div>
+        <h2>Let’s build something insightful</h2>
+        <p>
+          I am available for data, AI, and economics consulting projects, global collaborations, and strategic advisory work.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:pozosmarijose@gmail.com" target="_blank" rel="noreferrer">Email Me</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/company/mjpg-analytics-economics" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-secondary" href="https://github.com/Majo14Pozos" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
   </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('section[id]');
+
+    function updateActiveTab() {
+      let current = 'home';
+      const scrollY = window.scrollY + 170;
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const id = section.id;
+
+        if (scrollY >= top) {
+          current = id;
+        }
+      });
+
+      tabs.forEach((tab) => {
+        const target = tab.getAttribute('href');
+        const isActive = target === '#' + current;
+        tab.classList.toggle('active', isActive);
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveTab, { passive: true });
+    window.addEventListener('load', updateActiveTab);
+  </script>
 </body>
 </html>
