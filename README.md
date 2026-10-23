@@ -2,92 +2,66 @@
 
 Data, Economics & Applied Analysis
 
-Analítica de datos | Economía aplicada | Modelado con Python/R | Visualización y dashboards
-
 <p align="left">
-  <a href="https://github.com/Majo14Pozos" target="_blank">
+  <a href="https://github.com/Majo14Pozos" target="_blank" rel="noreferrer">
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Majo14Pozos-181717?style=for-the-badge&logo=github" />
   </a>
-  <a href="https://Majo14Pozos.github.io" target="_blank">
+  <a href="https://Majo14Pozos.github.io" target="_blank" rel="noreferrer">
     <img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-Portfolio-0B3B5C?style=for-the-badge&logo=githubpages" />
   </a>
-  <a href="https://www.linkedin.com/company/mjpg-analytics-economics" target="_blank">
+  <a href="https://www.linkedin.com/company/mjpg-analytics-economics" target="_blank" rel="noreferrer">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-MJPG%20Analytics-0A66C2?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="https://www.notion.so/" target="_blank">
+  <a href="https://www.notion.so/" target="_blank" rel="noreferrer">
     <img alt="Notion" src="https://img.shields.io/badge/Notion-Portafolio%20Visual-000000?style=for-the-badge&logo=notion" />
   </a>
 </p>
 
 ## About
 
-M JPG Analytics & Economics is a consulting and analytical practice focused on data-driven decision making, macroeconomic analysis, and structured business intelligence.
+M JPG Analytics & Economics is a consulting and analytical practice focused on turning complex information into clear decisions.
 
-The public portfolio is intentionally organized around a safe and scalable model:
+The practice combines:
 
-- GitHub: technical code, modular scripts, demo notebooks, reproducible workflows, clean repositories.
-- Notion: commercial portfolio, technical memos, methodological summaries, dashboards screenshots, and case narratives.
-- GitHub Pages: professional landing page with clean navigation and entry points to the public portfolio.
+- analytical consulting
+- macroeconomic and business analysis
+- forecasting and structured models
+- dashboards and executive reporting
+- methodology and decision support
 
-This approach protects sensitive material while still demonstrating analytical depth, methodological discipline, and business value.
+The public portfolio follows a disciplined and secure structure:
 
-## Core focus areas
+- GitHub: clean code, modular scripts, open demo workflows, reusable analytical assets.
+- Notion: commercial narrative, technical memos, project summaries, screenshots, and methodology documentation.
+- GitHub Pages: landing page and public access hub for the portfolio.
 
-- Applied analytics
-- Economics and macro indicators
-- Risk analysis
-- Data visualization
-- Statistical and econometric modeling
-- Business intelligence and reporting
+This keeps the technical work reproducible and professional without exposing sensitive or unpublished material.
 
-## Public portfolio strategy
+## Strategic positioning
 
-To keep the technical work robust and the business narrative protected, the portfolio follows a structured public-to-private model.
-
-### 1) Skeleton / demo code
-
-Public repositories focus on reproducible examples, synthetic data, and modular workflows rather than raw sensitive data.
-
-- Reusable functions
-- Clean notebooks
-- Synthetic datasets
-- Open-source style documentation
-- Clear installation and execution steps
-
-### 2) Visual evidence without exposing sensitive inputs
-
-The strongest proof of quality is often the outcome itself: visuals, dashboards, charts, and methodology summaries.
-
-- Screenshots of dashboards and analyses
-- Clean summary tables
-- Methodological explanations
-- Reproducible outputs without proprietary information
-
-### 3) GitHub + Notion separation
-
-This is the professional architecture we recommend:
-
-- GitHub: technical implementation, reproducible code, demos, notebooks, scripts.
-- Notion: methodology, narrative, technical memos, case studies, and commercial presentation.
-- GitHub Pages: public landing page and access hub.
+- Business and economic analysis
+- Data-driven decisions
+- Structured storytelling for stakeholders
+- Research-based consulting
+- Reproducible analytical workflows
 
 ## Selected projects
 
 ### FMX
-Repository focused on applied data analysis, structured modeling, and reproducible analytical work.
+Applied data and analytical project with a strong focus on reproducibility, structure, and business-oriented interpretation.
 
 - Repository: https://github.com/Majo14Pozos/FMX
 
 ### Monetary Policy Risk Dashboard Mexico
-Dashboard and analytical work centered on macroeconomic variables, policy risk, and structured indicators.
+Analytical dashboard focused on macroeconomic signals, policy conditions, and structured economic risk assessment.
 
 - Repository: https://github.com/Majo14Pozos/monetary-policy-risk-dashboard-mexico
 
-### Public portfolio and documents
-Technical notes, analytical frameworks, and methodology summaries are organized in a public-facing portfolio outside the source code layer.
+### Public portfolio and methodology
+The commercial and methodological layer is organized in a public portfolio that complements the technical repositories without exposing sensitive source material.
 
-- Portfolio / public documentation: [Insert Notion public URL]
-- Technical memos: [Insert Notion public URL]
+- Portfolio / public documentation: [Insert public Notion URL]
+- Technical memos: [Insert public Notion URL]
 - GitHub Pages: https://Majo14Pozos.github.io
 
 ## Technical stack
@@ -99,47 +73,49 @@ Technical notes, analytical frameworks, and methodology summaries are organized 
 - Matplotlib / Seaborn / Plotly
 - SQL
 - Git / GitHub
-- Dashboarding and reporting
+- BI and dashboards
 
 ## Methodology
 
-The analytical workflow generally follows:
+The analytical workflow typically includes:
 
 1. Data collection and validation
-2. Data cleaning and preparation
-3. Exploratory analysis
-4. Statistical and econometric modeling
-5. Visualization and reporting
-6. Business-oriented communication
+2. Cleaning and structuring
+3. Exploratory investigation
+4. Statistical or econometric analysis
+5. Visualization and executive reporting
+6. Decision-oriented communication
 
-## Portfolio and commercial presence
+## Public-facing workflow
 
-The public technical work is hosted in GitHub, while the style, narrative, and strategic presentation are maintained in Notion.
+To protect sensitive research and business information, the portfolio is divided into three layers:
 
-This allows the work to remain:
+### 1) Skeleton / demo code
+Open-source style repositories, synthetic or public datasets, and modular workflows that demonstrate the method without exposing private sources.
 
-- clean
-- reproducible
-- auditable
-- professional
-- commercially presentable
+### 2) Visual evidence
+Screenshots, charts, and dashboards are used as proof of value, clarity, and technical quality.
 
-without exposing sensitive internal content or unpublished research.
+### 3) Notion as commercial layer
+Notion is used for:
 
-- Public Notion portfolio: [Insert public URL]
-- Technical memos: [Insert public URL]
-- Contact / inquiry: [Insert email or contact form]
+- project narratives
+- technical memos
+- methodology summaries
+- visual evidence and screenshots
+- client-friendly explanations
+
+This creates a professional and scalable public-facing system while keeping proprietary material protected.
 
 ## Contact
 
-Open to:
+Open to collaborations in:
 
 - analytical consulting
 - economic analysis
-- data strategy
-- dashboard projects
+- dashboards and reporting
 - predictive modeling
-- research and methodology support
+- decision support and research
 
 - GitHub: https://github.com/Majo14Pozos
 - Portfolio: https://Majo14Pozos.github.io
@@ -148,16 +124,4 @@ Open to:
 
 ---
 
-## Notes for public-facing use
-
-This repository is designed to demonstrate the method and the value of the work without exposing sensitive thesis material, private datasets, or unpublished business content.
-
-The emphasis is on:
-
-- modular code
-- repeatable analysis
-- visible outputs
-- clean structure
-- professional communication
-
-This is a safer and more scalable way to build a technical and commercial portfolio.
+This repository is designed to communicate technical quality, analytical rigor, and business clarity without exposing sensitive proprietary content.
