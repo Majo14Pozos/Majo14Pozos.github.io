@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MJPG Analytics & Economics</title>
+  <meta name="description" content="MJPG Analytics & Economics - Data, Economics and Applied Analysis." />
+  <style>
+    :root {
+      --navy: #0c3d5c;
+      --navy-deep: #0a2f4d;
+      --blue: #1d73b7;
+      --soft-blue: #eaf5ff;
+      --gray-bg: #f4f5f7;
+      --text: #1b1b1b;
+      --muted: #5a6472;
+      --line: #dfe3e8;
+      --white: #ffffff;
+      --green: #1f9d69;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--gray-bg);
+      color: var(--text);
+    }
+
+    a { text-decoration: none; color: inherit; }
+    .container {
+      width: min(1200px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top-banner {
+      background: linear-gradient(90deg, rgba(10,47,77,0.86), rgba(10,47,77,0.86)),
+                  url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .brand-row {
+      width: min(1200px, calc(100% - 32px));
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      align-items: center;
+      gap: 0;
+      min-height: 180px;
+    }
+
+    .logo-box {
+      width: 200px;
+      height: 200px;
+      background: var(--navy);
+      border: 5px solid rgba(255,255,255,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 88px;
+      line-height: 0.8;
+      color: white;
+      font-weight: 700;
+      letter-spacing: -0.06em;
+      margin-left: 20px;
+      box-shadow: 0 14px 24px rgba(0,0,0,0.12);
+    }
+
+    .logo-box span {
+      display: block;
+      transform: translateY(-8px);
+    }
+
+    .brand-title {
+      font-size: clamp(2rem, 3vw, 3.2rem);
+      line-height: 1.1;
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      text-align: center;
+      padding-right: 80px;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 0;
+      padding: 28px 0 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+
+    .hero { padding: 30px 0 0; }
+    .hero-inner { padding: 0 24px; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 4vw, 4.2rem);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      font-size: clamp(1.2rem, 2vw, 2.1rem);
+      color: var(--text);
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 1.15rem;
+      font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .profile-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 26px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d792a8, #7c4d7a);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 26px;
+      padding-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 58px;
+      min-width: 180px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 0 28px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+      border: 2px solid var(--blue);
+      box-shadow: 0 12px 18px rgba(29,115,183,0.18);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border: 2px solid rgba(0,0,0,0.15);
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+      padding: 18px 24px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.4);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .nav a {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #2b2f36;
+      padding: 12px 0 18px;
+      position: relative;
+    }
+
+    .nav a.active {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 4px;
+      background: var(--green);
+      border-radius: 2px;
+    }
+
+    .content {
+      padding: 40px 24px 80px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .brand-row {
+        grid-template-columns: 1fr;
+        padding-top: 16px;
+      }
+      .logo-box {
+        margin: 0 auto;
+      }
+      .brand-title {
+        padding-right: 0;
+        text-align: center;
+      }
+      .actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-banner">
+    <div class="brand-row">
+      <div class="logo-box"><span>M<br>J<br>P<br>G</span></div>
+      <div class="brand-title">Analytics &<br>Economics</div>
+    </div>
+  </header>
+
+  <main class="panel">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>MJPG Analytics & Economics</h1>
+        <div class="subtitle">
+          Analytics, economics, and business systems for structured decision-making
+        </div>
+
+        <div class="meta">
+          <span>Business Consulting and Services</span>
+          <span>•</span>
+          <span>Mexico City</span>
+          <span>•</span>
+          <span>17 followers</span>
+          <span>•</span>
+          <span>0-1 employees</span>
+        </div>
+
+        <div class="profile-row">
+          <div class="avatar">MJ</div>
+          <div>María Del Rocío & 13 other connections follow this page</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:tuemail@dominio.com">Message</a>
+          <a class="btn btn-secondary" href="https://Majo14Pozos.github.io">Portfolio</a>
+          <a class="btn btn-secondary" href="https://www.notion.so/" target="_blank">Notion</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Posts</a>
+      <a href="#">Jobs</a>
+      <a href="#">People</a>
+    </nav>
+
+    <section class="content">
+      Analytical consulting and economic insight for structured business decisions.<br>
+      Built around data, research, and operational clarity.
+    </section>
+  </main>
+</body>
+</html>
