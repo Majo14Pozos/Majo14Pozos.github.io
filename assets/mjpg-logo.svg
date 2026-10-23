@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="MJPG logo">
+  <rect width="500" height="500" fill="#0A2F4D"/>
+  <g transform="rotate(-18 250 250)" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-weight="400">
+    <text x="8" y="220" font-size="295">M</text>
+    <text x="150" y="290" font-size="250">J</text>
+    <text x="232" y="385" font-size="248">P</text>
+    <text x="315" y="285" font-size="250">G</text>
+  </g>
+</svg>
